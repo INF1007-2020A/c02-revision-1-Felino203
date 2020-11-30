@@ -22,7 +22,9 @@ from my_bot import MyBot
 
 
 def main():
-	chapter_example = "ch7"
+	bot = TwitchBot("logs")
+	bot.connect_and_join("oauth:wnx097lzj4xqz2gueeokfni73dbdo8", "Felino203", "chosson")
+	chapter_example = "ch11"
 
 	if chapter_example == "ch7":
 		run_ch7_example()
